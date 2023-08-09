@@ -10,15 +10,25 @@ body{
     align-items: center;
     justify-content: center;
 }
+@media(max-width: 768px){
+    main{
+        height: 100%;
+        width: 100%;
+    }
+}
 main{
     width: 600px;
-    padding: 60px;
+    padding: 33px;
     background-color: cornflowerblue;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 .button{
     width: calc((100% / 4) - 7px );
-    padding: 25px;
+    padding: 13px;
     outline: none;
     font-size: 20px;
     border-radius: 6px;
