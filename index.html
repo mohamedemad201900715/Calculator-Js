@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculaor</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <main>
+        <form name="form">
+            <input type="text"name="operationview" class="operation-view" value="31">
+        </form>
+<div class="columns">
+        <div class="column-1 column">
+            <button class="button top-button" onclick="clean()" >C</button>
+            <button class="button top-button">&#8756</button>
+            <button class="button top-button" onclick="Back()">Del</button>
+            <button class="button right-bottom" onclick="insert('/')">&#247</button>
+        </div>
+        <div class="column-2 column">
+            <button class="button" onclick="insert(7)">7</button>
+            <button class="button" onclick="insert(8)">8</button>
+            <button class="button" onclick="insert(9)">9</button>
+            <button class="button right-bottom" onclick="insert('*')">&#215</button>
+        </div>
+        <div class="column-3 column">
+            <button class="button" onclick="insert(4)">4</button>
+            <button class="button" onclick="insert(5)">5</button>
+            <button class="button" onclick="insert(6)">6</button>
+            <button class="button right-bottom" onclick="insert('-')">&#8722</button>
+        </div>
+        <div class="column-4 column">
+            <button class="button" onclick="insert(1)">1</button>
+            <button class="button" onclick="insert(2)">2</button>
+            <button class="button" onclick="insert(3)">3</button>
+            <button class="button right-bottom" onclick="insert('+')" >&#43</button>
+        </div>
+        <div class="column-5 column">
+            <button class="button dot" onclick="insert('.')">.</button>
+            <button class="button zero" onclick="insert(0)">0</button>
+            <button class="button button-Equal" onclick="equal()">&#61</button>
+        </div>
+    </div>
+    </main>
+    
+</body>
+</html>
